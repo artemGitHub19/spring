@@ -97,8 +97,13 @@
   color: #FFFFFF;
 }
 
+.component-react-paginate-active-link:focus {   
+  display: none;
+}
+
 .component-react-paginate-page-active {
   background-color: #5E96FC;
+  border-color: #5E96FC;
 }
 
 @media all and (max-width: 430px) {
