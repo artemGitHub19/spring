@@ -137,7 +137,6 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
   color: #ACADB9;
 }
 
@@ -249,12 +248,11 @@
   border-radius: 8px;
 }
 
-.component-filter-number-input-input {
+.component-filter-number-input-input::placeholder {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
   color: #ACADB9;
 }
 
