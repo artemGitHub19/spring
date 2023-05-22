@@ -1,0 +1,121 @@
+.component-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  isolation: isolate;
+  height: 84px;
+  background: #FFFFFF;
+}
+
+.component-header-title-wrapper {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px;
+  gap: 12px;
+  width: 1116px; 
+  height: 36px;
+}
+
+.component-header-app-title {
+  width: 99px;
+  height: 36px;
+  margin: 0;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px; 
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  color: #232134;
+}
+
+.component-header-tabs {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 60px;
+  position: absolute;
+  height: 20px; 
+  left: calc(50% - 246px/2 + 0.5px);
+  top: 32px;
+}
+
+.component-header-tab {
+  text-decoration: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;  
+  color: #232134;
+}
+
+.component-header-tab:active {
+  color: #5E96FC;
+  font-weight: 500;
+}
+
+.component-header-tab-active {
+  text-decoration: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #5E96FC;
+}
+
+.component-header-logo-icon-wrapper {
+  width: 30px;
+  height: 30px;   
+  margin: 0;
+}
+
+@media all and (max-width: 1150px) {
+  .component-header-title-wrapper {  
+    width: 773px; 
+  }
+}
+
+@media all and (max-width: 823px) {
+  .component-header-title-wrapper {  
+    width: auto; 
+  }
+  
+  .component-header {
+    justify-content: space-between;
+    padding-left:25px;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .component-header-tabs {  
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-right: 17px;
+  }
+}
+
+@media all and (max-width: 430px) {
+  .component-header-tabs {  
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}

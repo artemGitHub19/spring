@@ -1,0 +1,57 @@
+.page-vacancies-search { 
+  background-color: #F7F7F8;
+}
+
+.page-vacancies-search-filter-and-main-wrapper { 
+  box-sizing: border-box;
+  min-height: calc(100vh - 84px);  
+  padding: 40px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 28px;
+}
+
+.page-vacancies-search-main { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media all and (max-width: 1150px) {
+  .page-vacancies-search-filter-and-main-wrapper {     
+    display: block; 
+    padding: 0 5px;
+  }
+
+  .page-vacancies-search-main { 
+    display: block; 
+  }   
+
+  .page-vacancies-search-search-bar-wrapper { 
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .page-vacancies-search-pagination-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.error-wrapper {
+  color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}

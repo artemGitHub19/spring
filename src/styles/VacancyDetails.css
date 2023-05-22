@@ -1,0 +1,225 @@
+.page-vacancy-details {
+  background: #F7F7F8;
+  min-height: 100vh;
+}
+
+.page-vacancy-details-main-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.page-vacancy-details-main {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #232134;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+}
+
+.page-vacancy-details-p { 
+  margin: 0 0 16px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #232134;
+}
+
+.page-vacancy-details-ul {
+  padding: 0 0 20px 24px;
+}
+
+.page-vacancy-details-li {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #232134;
+}
+
+.page-vacancy-details-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 90px;
+  width: 773px;
+  height: 157px;
+  background: #FFFFFF;
+  border: 1px solid #EAEBED;
+  border-radius: 12px;
+}
+
+.page-vacancy-details-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  height: 109px;
+}
+
+.page-vacancy-details-profession {
+  max-width: 600px;
+  height: 34px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  color: #232134;
+}
+
+.page-vacancy-details-salary-and-shedule {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+  height: 21px;
+}
+
+.page-vacancy-details-salary {
+  height: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #232134;
+}
+
+.page-vacancy-details-shedule {
+  height: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #232134;
+}
+
+.page-vacancy-details-location-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  height: 22px;
+}
+
+.page-vacancy-details-location {
+  height: 22px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #232134;  
+}
+
+.page-vacancy-details-additional-data {
+  box-sizing: border-box;
+  padding: 24px;
+  width: 773px;
+  background: #FFFFFF;
+  border: 1px solid #EAEBED;
+  border-radius: 12px;
+}
+
+@media all and (max-width: 1150px) {
+  .page-vacancy-details-main-wrapper {     
+    display: block; 
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 24px;
+  }
+
+  .page-vacancy-details-main { 
+    display: block; 
+  }   
+
+  .page-vacancy-details-vacancy-wrapper {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-top: 16px;
+  }
+
+  .page-vacancy-details-additional-data-wrapper {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .page-vacancy-details-wrapper {
+    gap: 0px;  
+    height: auto; 
+  }
+
+  .page-vacancy-details-description {    
+    height: auto;
+  }
+
+  .page-vacancy-details-profession {    
+    height: auto;
+  }
+
+  .page-vacancy-details-salary-and-shedule {
+    height: auto;
+  }
+  
+  .page-vacancy-details-salary {
+    height: auto;
+  }  
+  
+  .page-vacancy-details-shedule {
+    height: auto;
+  }
+
+  .page-vacancy-details-location-wrapper {
+    height: auto;
+  }  
+  
+  .page-vacancy-details-location {
+    height: auto;
+  }
+}
+
+@media all and (max-width: 510px) {
+  .page-vacancy-details-salary-and-shedule {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }  
+  
+  .page-vacancy-details-salary-division-icon {
+    display: none;    
+  }
+}
+
+@media all and (max-width: 783px) {  
+  .page-vacancy-details-profession {  
+    white-space: normal;
+  }
+}

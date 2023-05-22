@@ -1,0 +1,179 @@
+.component-vacancy-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 90px;
+  width: 773px;
+  height: 137px; 
+  background: #FFFFFF;
+  border: 1px solid #EAEBED;
+  border-radius: 12px;
+  flex: 0 1 auto;  
+}
+
+.component-vacancy-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+  height: 89px;
+}
+
+.component-vacancy-profession {
+  text-decoration: none;
+  max-width: 600px;
+  height: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #5E96FC;
+}
+
+.component-vacancy-salary-and-shedule {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+  height: 21px;
+}
+
+.component-vacancy-salary {
+  height: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #232134;
+}
+
+.component-vacancy-salary-division-icon {
+  width: 9px;
+  height: 21px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 21px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color: #7B7C88;
+}
+
+.component-vacancy-shedule {
+  height: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #232134;
+}
+
+.component-vacancy-location-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  height: 20px;
+}
+
+.component-vacancy-location-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.component-vacancy-location {
+  height: 19px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #232134;
+}
+
+.component-vacancy-favourite-button-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.component-vacancy-favourite-button, .component-vacancy-favourite-button-star-icon-selected {
+  background-color: #FFFFFF;  
+  background-image: url(../icons/Star.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;  
+  position: relative;
+  width: 22px;
+  height: 22px;
+  left: 1px;
+  top: 1px;
+  border: none;
+  cursor: pointer;
+}
+
+.component-vacancy-favourite-button:hover {
+  background-image: url(../icons/StarHover.svg);  
+}
+
+.component-vacancy-favourite-button-star-icon-selected {
+  background-image: url(../icons/StarSelected.svg);
+}
+
+.star_icon {
+  width: 22px;
+  height: 22px;
+}
+
+@media all and (max-width: 1150px) {
+  .component-vacancy-wrapper {
+    gap: 0px;  
+    height: auto; 
+  }
+
+  .component-vacancy-description,
+  .component-vacancy-profession,
+  .component-vacancy-salary-and-shedule,  
+  .component-vacancy-salary,  
+  .component-vacancy-salary-division-icon,  
+  .component-vacancy-shedule,
+  .component-vacancy-location-wrapper,  
+  .component-vacancy-location {
+    height: auto;
+  }
+}
+
+@media all and (max-width: 510px) {
+  .component-vacancy-salary-and-shedule {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }  
+  .component-vacancy-salary-division-icon {
+    display: none;    
+  }
+}
+
+@media all and (max-width: 783px) {  
+  .component-vacancy-profession {  
+    white-space: normal;
+  }
+}

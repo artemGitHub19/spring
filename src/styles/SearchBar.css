@@ -1,0 +1,83 @@
+.component-search-bar-root {
+  width: 773px;
+  height: 48px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.component-search-bar-wrapper {
+  height: 48px; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+  flex: 1 1 auto;
+}
+
+.component-search-bar-input {  
+  border: 1px solid #EAEBED;
+  border-radius: 8px;
+  padding: 0 100px 0 36px;
+  height: 48px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #232134;
+  background: #FFFFFF;
+}
+
+.component-search-bar-input::placeholder {
+  height: 21px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ACADB9;
+}
+
+.component-search-bar-input:focus {
+  border-color: #5E96FC;
+}
+
+.component-search-bar-input:hover {
+  border-color: #5E96FC;
+}
+
+.component-search-bar-right-section {
+  width: 83px;  
+  margin-right: 12px;
+}
+
+.component-search-bar-button {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  width: 83px;
+  height: 32px;
+  color: #FFFFFF;
+  background: #5E96FC;
+  border-radius: 8px;
+  border: none;
+}
+
+.component-search-bar-button:hover {  
+  background: #92C1FF;
+}
+
+.component-search-bar-button:active {  
+  background: #3B7CD3;
+}
+
+.component-search-bar-icon {
+  width: 16px;
+  height: 48px;
+  align-self: center;
+  margin-left: 12px;
+}

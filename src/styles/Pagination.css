@@ -1,0 +1,131 @@
+.component-react-paginate-wrapper {
+  margin: 0;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  list-style-type: none;
+  margin-bottom: 44px;
+  width: auto;
+}
+
+.component-react-paginate-page {  
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  width: 32px;
+  height: 32px;
+  background: #FFFFFF;
+  border: 1px solid #D5D6DC;
+  border-radius: 4px;
+}
+
+.component-react-paginate-page-link {
+  cursor: pointer;  
+  height: 30px;
+  padding: 0 10px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #232134;
+  user-select: none;
+}
+
+.component-react-paginate-page-next, 
+.component-react-paginate-page-next-disabled {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  width: 32px;
+  height: 32px;
+  background-color: #FFFFFF;
+  background-image: url(../icons/NextPage.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #D5D6DC;
+  border-radius: 4px;
+}
+
+.component-react-paginate-page-next-disabled {
+  background-image: url(../icons/NextPageDisabled.svg);
+}
+
+.component-react-paginate-page-previous, 
+.component-react-paginate-page-previous-disabled { 
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #FFFFFF;
+  background-image: url(../icons/PreviousPage.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #D5D6DC;
+  border-radius: 4px;
+}
+
+.component-react-paginate-page-previous-disabled {
+  background-image: url(../icons/PreviousPageDisabled.svg);
+}
+
+.component-react-paginate-previous-link {
+  cursor: pointer;
+  height: 30px;
+  padding: 0 15px;
+}
+
+.component-react-paginate-next-link {
+  cursor: pointer;
+  height: 30px;
+  padding: 0 15px;
+}
+
+.component-react-paginate-active-link {
+  color: #FFFFFF;
+}
+
+.component-react-paginate-page-active {
+  background-color: #5E96FC;
+}
+
+@media all and (max-width: 430px) {
+  .component-react-paginate-wrapper {
+    gap: 4px;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .component-react-paginate-wrapper {
+    gap: 0px;
+  }
+
+  .component-react-paginate-page,
+  .component-react-paginate-page-next, 
+  .component-react-paginate-page-next-disabled, 
+  .component-react-paginate-page-previous, 
+  .component-react-paginate-page-previous-disabled {
+    width: 30px;
+  }
+
+  .component-react-paginate-page-link {
+    padding: 0 9px;
+  }
+
+  .component-react-paginate-previous-link,
+  .component-react-paginate-next-link {
+    padding: 0 14px;
+  }
+}

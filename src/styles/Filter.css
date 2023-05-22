@@ -1,0 +1,375 @@
+.component-filter {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 10px;
+  width: 315px;
+  height: 360px;
+  background: #FFFFFF; 
+  border: 1px solid #EAEBED;
+  border-radius: 12px;
+}
+
+.component-filter-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 25px;
+  width: 275px;
+  height: 20px;
+}
+
+.component-filter-clear-button-root {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  height: 20px;
+  border: none;
+}
+
+.component-filter-clear-button-root:hover {
+  background-color: transparent;
+}
+
+.component-filter-clear-button-inner {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+  height: 20px;  
+}
+
+.component-filter-clear-button-label {
+  height: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ACADB9;
+  display: flex;
+  align-items: center;
+}
+
+.component-filter-clear-button-root:hover 
+.component-filter-clear-button-label{  
+  color: #92C1FF;  
+}
+
+.component-filter-clear-button-root:active 
+.component-filter-clear-button-label{  
+  color: #5E96FC;  
+}
+
+.component-filter-clear-button-icon {
+  margin: 0;
+  background-image: url(../icons/DeleteDefault.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+}
+
+.component-filter-clear-button-root:hover 
+.component-filter-clear-button-icon {
+  background-image: url(../icons/DeleteHover.svg);
+}
+
+.component-filter-clear-button-root:active 
+.component-filter-clear-button-icon {
+  background-image: url(../icons/DeletePressed.svg);
+}
+
+.component-filter-title {
+  height: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #232134;
+}
+
+.component-filter-catalogue-select-label {
+  height: 19px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #232134;
+}
+
+.component-filter-catalogue-select-right-section {
+  width: 24px;
+  padding-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.component-filter-catalogue-select-input {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #232134;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 42px;
+  background: #FFFFFF;
+  border: 1px solid #D5D6DC;
+  border-radius: 8px;
+}
+
+.component-filter-catalogue-select-input::placeholder {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ACADB9;
+}
+
+.component-filter-catalogue-select-input:hover, 
+.component-filter-catalogue-select-input:focus {
+  border-color: #5E96FC;
+}
+
+.component-filter-catalogue-select-root {
+  margin-top: 32px;
+  margin-bottom: 20px;  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 275px;
+  height: 69px;
+}
+
+.component-filter-catalogue-select-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 275px;
+  height: 42px;
+  background: #FFFFFF;
+}
+
+.component-filter-number-input-control {
+  border: none;
+  width: 12px;  
+}
+
+.component-filter-number-input-control-up {
+  cursor: pointer;
+  color: transparent;
+  background-image: url(../icons/NumberInputChevronUpDefault.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 12px;
+  max-height: 12px;
+  padding-top: 5px;
+}
+
+.component-filter-number-input-control-up:hover {
+  background-image: url(../icons/NumberInputChevronUpHover.svg);  
+}
+
+.component-filter-number-input-control-up:active {
+  background-image: url(../icons/NumberInputChevronUpPressed.svg);
+}
+
+.component-filter-number-input-control-down {
+  cursor: pointer;
+  color: transparent;
+  background-image: url(../icons/NumberInputChevronDownDefault.svg);
+  background-repeat: no-repeat;
+  background-position:center;
+  width: 12px;
+  max-height: 12px;
+  padding-bottom: 5px;
+}
+
+.component-filter-number-input-control-down:hover {
+  background-image: url(../icons/NumberInputChevronDownHover.svg);
+}
+
+.component-filter-number-input-control-down:active {
+  background-image: url(../icons/NumberInputChevronDownPressed.svg);
+}
+
+.component-filter-number-input-control-down:disabled {
+  color: transparent;
+}
+
+.component-filter-number-input-root {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 275px;
+}
+
+.component-filter-number-input-wrapper {
+  width: 275px;
+  height: 42px;
+}
+
+.component-filter-number-input-input {  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #232134;
+  box-sizing: border-box;
+  width: 275px;
+  height: 42px;
+  background: #FFFFFF;
+  border: 1px solid #D5D6DC;
+  border-radius: 8px;
+}
+
+.component-filter-number-input-input {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ACADB9;
+}
+
+.component-filter-number-input-input:hover, 
+.component-filter-number-input-input:focus {
+  border-color: #5E96FC;
+}
+
+.component-filter-number-input-right-section {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: flex-start;  
+  gap: 2px;
+  width: 24px;
+}
+
+.component-filter-apply-button {
+  margin-top: 20px;
+  width: 275px;
+  height: 40px;
+  background: #5E96FC;
+  border-radius: 8px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.component-filter-apply-button:hover {
+  background: #92C1FF;
+}
+
+.component-filter-apply-button:active {
+  background: #3B7CD3;
+}
+
+.component-filter-catalogue-select-root 
+.mantine-ScrollArea-thumb {
+  background: #ACADB9;
+  border-radius: 20px;
+  height: 24px !important;
+}
+
+.component-filter-catalogue-select-root 
+.mantine-ScrollArea-scrollbar {
+  width: 4px !important; 
+  margin: 0 4px 0 0;
+  padding: 0;
+}
+
+.component-filter-catalogue-select-root 
+.mantine-Select-dropdown {
+  border-radius: 8px,
+}
+
+.component-filter-catalogue-select-root 
+.mantine-Select-item {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #232134;
+  padding: 8px;
+  width: 267px;
+  height: 36px;             
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  border-radius: 8px;
+}
+
+.component-filter-catalogue-select-root 
+.mantine-Select-item[data-hovered] {
+  background-color: #DEECFF;
+}
+
+.component-filter-catalogue-select-root 
+.mantine-Select-item[data-selected] {
+  background-color: #5E96FC;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+@media all and (max-width: 1150px) {
+  .component-filter-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+  .component-filter-wrapper {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 773px;  
+    flex: 0 1 auto; 
+  }
+}
+
+@media all and (max-width: 325px) {  
+  .component-filter-wrapper {
+    width: 100%;    
+  }
+
+  .component-filter {
+    width: 100%; 
+  }
+}

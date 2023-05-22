@@ -1,0 +1,27 @@
+.page-favourites {
+  background-color: #F7F7F8;  
+}
+
+.page-favourites-main {
+  box-sizing: border-box;
+  min-height: calc(100vh - 84px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+
+@media all and (max-width: 1150px) {
+  .page-favourites-main {     
+    display: block; 
+    padding: 0 5px;
+  }
+  
+  .page-favourites-pagination-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+}
