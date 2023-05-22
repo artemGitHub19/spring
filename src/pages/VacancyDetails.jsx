@@ -13,15 +13,13 @@ import { useSessionStorage } from "../hooks/useSessionStorage";
 
 function VacancyDetails() {
   const [error, setError] = useState(null);
-  const [isLoaded, setIsLoaded] = useSessionStorage('vacancyDetails_isLoaded', false);
+  const [isLoaded, setIsLoaded] = useState(false);
   const [vacancy, setVacancy] = useSessionStorage('vacancyDetails_vacancy', {});
   const location = useLocation();
   let id = location.pathname.split('vacancy/')[1];
 
   useEffect(() => {
-    function searchVacancy() {   
-      setIsLoaded(false);  
-
+    function searchVacancy() { 
       let accessToken;
 
       if ( Authorization.checkAccessToken() ) {  
@@ -46,9 +44,11 @@ function VacancyDetails() {
       }     
     }    
 
-    if (vacancy && +vacancy?.id !== +id) {
+    if (vacancy && +vacancy?.id !== +id) {      
       searchVacancy();      
-    } 
+    } else {
+      setIsLoaded(true);
+    }
     
     if (window.pageYOffset > 0) {
       window.scrollTo(0, 0);
