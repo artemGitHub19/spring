@@ -48,11 +48,11 @@ function VacancyDetails() {
 
     if (vacancy && +vacancy?.id !== +id) {
       searchVacancy();      
-    } else {
-      if (window.pageYOffset > 0) {
-        window.scrollTo(0, 0);
-      } 
-    }    
+    } 
+    
+    if (window.pageYOffset > 0) {
+      window.scrollTo(0, 0);
+    }  
   }, []);  
 
   function fetchVacancy(accessToken, id) {
